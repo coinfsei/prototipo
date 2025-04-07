@@ -1,0 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.active {
+    color: #f97316;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
