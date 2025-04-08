@@ -9,138 +9,133 @@
 </head>
 
 <body class="font-sans">
-    <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
-        <nav class="container mx-auto flex flex-wrap justify-between items-center p-4" id="navbar">
-            <div class="text-xl font-bold">
-                <a href="#inicio">Logo</a>
-            </div>
-            <button class="block sm:hidden" id="menu-toggle">
-                <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-
-            <ul class="w-full sm:w-auto sm:flex sm:space-x-6 hidden sm:block mt-4 sm:mt-0" id="menu">
-                <li><a href="#inicio" class="menu-link block text-gray-700 text-center">Início</a></li>
-                <li><a href="#sobre" class="menu-link block text-gray-700 text-center">Sobre</a></li>
-                <li><a href="#programacao" class="menu-link block text-gray-700 text-center">Programação</a></li>
-                <li><a href="#palestrantes" class="menu-link block text-gray-700 text-center">Palestrantes</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-    <main>
-        <section id="inicio" class="h-screen flex items-center justify-center bg-blue-100 p-4" data-aos="fade-up">
-            <h1 class="text-3xl sm:text-4xl font-bold text-center">Banner</h1>
-        </section>
-
-        <section id="sobre" class="flex items-center justify-center bg-white-100 p-4 py-20" data-aos="fade-up">
-            <h2 class="text-2xl sm:text-3xl text-center">Sobre</h2>
-        </section>
-
-        <section id="programacao" class="items-center justify-center bg-gray-100 p-4 py-20" data-aos="fade-up">
-            <h2 class="text-2xl sm:text-3xl text-center mb-6">Programação</h2>
-            <div>
-                <div class="flex justify-center space-x-4 mb-4">
-                    <button onclick="mostrarDia('dia1')" class="tab-button font-bold text-blue-600">Dia 1</button>
-                    <button onclick="mostrarDia('dia2')" class="tab-button font-bold text-blue-600">Dia 2</button>
+        <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+          <div class="container mx-auto bg-white py-4 px-20"> 
+            <nav class="container mx-auto flex flex-wrap justify-between items-center p-4" id="navbar">
+                <div class="text-xl font-bold">
+                    <a href="#inicio">Logo</a>
                 </div>
-                <div id="dia1" class="tab-content">
-                    <table class="w-full text-left border">
-                        <thead>
-                            <tr>
-                                <th>Horário</th>
-                                <th>Atividade</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>09:00</td>
-                                <td>Abertura</td>
-                            </tr>
-                            <tr>
-                                <td>10:00</td>
-                                <td>Palestra 1</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <button class="block sm:hidden" id="menu-toggle">
+                    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <ul class="w-full sm:w-auto sm:flex sm:space-x-6 hidden sm:block mt-4 sm:mt-0" id="menu">
+                    <li><a href="#inicio" class="menu-link block text-gray-700 text-center">Início</a></li>
+                    <li><a href="#sobre" class="menu-link block text-gray-700 text-center">Sobre</a></li>
+                    <li><a href="#programacao" class="menu-link block text-gray-700 text-center">Programação</a></li>
+                    <li><a href="#palestrantes" class="menu-link block text-gray-700 text-center">Palestrantes</a></li>
+                </ul>
+            </nav>
+          </div>
+        </header>
+        <main>
+            <section id="inicio" class="h-screen flex items-center justify-center bg-blue-100 p-4" data-aos="fade-up">
+                <h1 class="text-3xl sm:text-4xl font-bold text-center">Banner</h1>
+            </section>
+        <div class="container mx-auto bg-white py-4 px-20"> 
+            <section id="sobre" class="flex items-center justify-center bg-white-100 p-4 py-20" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl text-center">Sobre</h2>
+            </section>
+            <section id="programacao" class="items-center justify-center bg-gray-100 p-4 py-20" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl text-center mb-6">Programação</h2>
+                <div>
+                    <div class="flex justify-center space-x-4 mb-4">
+                        <button onclick="mostrarDia('dia1')" class="tab-button font-bold text-blue-600">Dia 1</button>
+                        <button onclick="mostrarDia('dia2')" class="tab-button font-bold text-blue-600">Dia 2</button>
+                    </div>
+                    <div id="dia1" class="tab-content">
+                        <table class="w-full text-left border">
+                            <thead>
+                                <tr>
+                                    <th>Horário</th>
+                                    <th>Atividade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>09:00</td>
+                                    <td>Abertura</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>Palestra 1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="dia2" class="tab-content hidden">
+                        <table class="w-full text-left border">
+                            <thead>
+                                <tr>
+                                    <th>Horário</th>
+                                    <th>Atividade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>09:00</td>
+                                    <td>Palestra 2</td>
+                                </tr>
+                                <tr>
+                                    <td>11:00</td>
+                                    <td>Encerramento</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div id="dia2" class="tab-content hidden">
-                    <table class="w-full text-left border">
-                        <thead>
-                            <tr>
-                                <th>Horário</th>
-                                <th>Atividade</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>09:00</td>
-                                <td>Palestra 2</td>
-                            </tr>
-                            <tr>
-                                <td>11:00</td>
-                                <td>Encerramento</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </section>
+            <section id="palestrantes" class="items-center justify-center bg-white-100 p-4 py-20" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl text-center mb-8">Palestrantes</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
+                    <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
+                        <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
+                        <h3 class="font-bold text-lg">Nome do Palestrante</h3>
+                        <p class="text-sm text-gray-600">Especialidade</p>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
+                        <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
+                        <h3 class="font-bold text-lg">Nome do Palestrante</h3>
+                        <p class="text-sm text-gray-600">Especialidade</p>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
+                        <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
+                        <h3 class="font-bold text-lg">Nome do Palestrante</h3>
+                        <p class="text-sm text-gray-600">Especialidade</p>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
+                        <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
+                        <h3 class="font-bold text-lg">Nome do Palestrante</h3>
+                        <p class="text-sm text-gray-600">Especialidade</p>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
+                        <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
+                        <h3 class="font-bold text-lg">Nome do Palestrante</h3>
+                        <p class="text-sm text-gray-600">Especialidade</p>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
+                        <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
+                        <h3 class="font-bold text-lg">Nome do Palestrante</h3>
+                        <p class="text-sm text-gray-600">Especialidade</p>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
+                        <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
+                        <h3 class="font-bold text-lg">Nome do Palestrante</h3>
+                        <p class="text-sm text-gray-600">Especialidade</p>
+                    </div>
+                    <!-- Repita para os outros palestrantes -->
                 </div>
-            </div>
-        </section>
-
-        <section id="palestrantes" class="items-center justify-center bg-white-100 p-4 py-20" data-aos="fade-up">
-            <h2 class="text-2xl sm:text-3xl text-center mb-8">Palestrantes</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
-                <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
-                    <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
-                    <h3 class="font-bold text-lg">Nome do Palestrante</h3>
-                    <p class="text-sm text-gray-600">Especialidade</p>
-                </div>
-                <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
-                    <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
-                    <h3 class="font-bold text-lg">Nome do Palestrante</h3>
-                    <p class="text-sm text-gray-600">Especialidade</p>
-                </div>
-                <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
-                    <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
-                    <h3 class="font-bold text-lg">Nome do Palestrante</h3>
-                    <p class="text-sm text-gray-600">Especialidade</p>
-                </div>
-                <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
-                    <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
-                    <h3 class="font-bold text-lg">Nome do Palestrante</h3>
-                    <p class="text-sm text-gray-600">Especialidade</p>
-                </div>
-                <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
-                    <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
-                    <h3 class="font-bold text-lg">Nome do Palestrante</h3>
-                    <p class="text-sm text-gray-600">Especialidade</p>
-                </div>
-                <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
-                    <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
-                    <h3 class="font-bold text-lg">Nome do Palestrante</h3>
-                    <p class="text-sm text-gray-600">Especialidade</p>
-                </div>
-                <div class="bg-gray-100 rounded-lg shadow p-4 text-center">
-                    <img src="https://via.placeholder.com/100" alt="Palestrante" class="mx-auto rounded-full mb-3">
-                    <h3 class="font-bold text-lg">Nome do Palestrante</h3>
-                    <p class="text-sm text-gray-600">Especialidade</p>
-                </div>
-                <!-- Repita para os outros palestrantes -->
-            </div>
-        </section>
-
-        <section id="marcas" class="flex items-center justify-center bg-white-100 p-4 py-20" data-aos="fade-up">
-            <h2 class="text-2xl sm:text-3xl text-center">Marcas</h2>
-        </section>
-
-    </main>
-
-    <footer class="bg-gray-800 text-white text-center py-6">
-        <p>&copy; 2025 - Todos os direitos reservados</p>
-    </footer>
+            </section>
+            <section id="marcas" class="flex items-center justify-center bg-white-100 p-4 py-20" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl text-center">Marcas</h2>
+            </section>
+        </div>
+        </main>
+        <footer class="bg-gray-800 text-white text-center py-6">
+            <p>&copy; 2025 - Todos os direitos reservados</p>
+        </footer>
 
     <!-- Scripts -->
     <!-- Tailwind CSS -->
